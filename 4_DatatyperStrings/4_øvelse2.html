@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h2>Øvelse 2 med .slice, .toUpperCase() og .toLowerCase() </h2>
+    <h4>Indtast følgende tekst i en variabel: <br>
+         "hej med DIG, HVoRdan hAR du DET?"<br>
+
+Ved hjælp af .slice, .toUpperCase() og .toLowerCase() skal du med en alert() udskrive følgende: <br>
+"Hej med dig, hvordan har du det?"
+</h4>
+    <script>
+        var hilsen = 'hej med DIG, HVoRdan hAR du DET?';
+        var forBogstav = hilsen.slice(0,1);
+        console.log(forBogstav); //tester om forbogstav er valgt
+        var stortForbogstav = forBogstav.toUpperCase();
+        console.log(stortForbogstav); //tester om forbogstav er skrevet med stort bogstav
+        var resthilsen = hilsen.slice(1,hilsen.length);
+        console.log(resthilsen); //tester om resten af teksten er valgt
+        var hilsenSlut = stortForbogstav + resthilsen.toLowerCase();
+        console.log(hilsenSlut); //viser den endelige tekst
+
+    </script>
+
+  </body>
+</html>
