@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Øvelse 2 - hvem har det højeste BMI?</h2>
+    <script>
+    var vægtDan = 100; //kg
+    var højdeDan = 1.85; //meter
+
+    var vægtMark = 92;
+    var højdeMark = 1.95;
+
+    var bmiDan = vægtDan / (højdeDan * højdeDan);
+    var bmiMark = vægtMark / (højdeMark * højdeMark);
+
+    console.log( bmiDan.toPrecision(3), bmiMark.toPrecision(3));
+    var højesteBmi = bmiDan > bmiMark;
+    console.log('Er Dan\'s BMI højere end Mark\'s BMI' + højesteBmi);
+    </script>
+  </body>
+</html>
